@@ -1,7 +1,17 @@
-# COMP60035 NLP CW
 
-Install dependencies:
-`pip install -r requirements.txt`
+# COMP60035 NLP Coursework  
+**Patronising and Condescending Language (PCL) Detection**
+
+This project tackles **binary classification of patronising and condescending language (PCL)** using the **Don't Patronize Me! dataset**. The goal is to build a model that can detect whether a paragraph contains patronising language towards vulnerable communities.
+
+---
+
+# Setup
+
+Install the required Python dependencies:
+
+```bash
+pip install -r requirements.txt
 
 ## Project Structure
 
