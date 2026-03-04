@@ -1,0 +1,67 @@
+{
+  "model_name": "roberta-base",
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "max_len": 256,
+  "batch_size": 16,
+  "num_epochs": 3,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "dropout": 0.1,
+  "use_focal_loss": true,
+  "focal_alpha": 0.75,
+  "focal_gamma": 2.0,
+  "use_weighted_sampler": false,
+  "threshold_grid_size": 181,
+  "best_ensemble_threshold_dev": 0.4649999999999999,
+  "official_dev_metrics": {
+    "threshold": 0.4649999999999999,
+    "precision_pcl": 0.5695652173913044,
+    "recall_pcl": 0.6582914572864321,
+    "f1_pcl": 0.6107226107226107,
+    "macro_f1": 0.7831479507457161
+  },
+  "seed_summaries": [
+    {
+      "seed": 42,
+      "epoch": 3,
+      "f1_pcl": 0.6080760095011877,
+      "threshold": 0.5099999999999999,
+      "precision_pcl": 0.5765765765765766,
+      "recall_pcl": 0.6432160804020101,
+      "macro_f1": 0.7821372879998638,
+      "ckpt": "/content/drive/MyDrive/COMP60035 nlp/BestModel/output/roberta_focal_threshold_seedensemble/checkpoints/roberta_focal_seed42.pt"
+    },
+    {
+      "seed": 52,
+      "epoch": 3,
+      "f1_pcl": 0.6210268948655256,
+      "threshold": 0.4649999999999999,
+      "precision_pcl": 0.6047619047619047,
+      "recall_pcl": 0.6381909547738693,
+      "macro_f1": 0.7900053765145305,
+      "ckpt": "/content/drive/MyDrive/COMP60035 nlp/BestModel/output/roberta_focal_threshold_seedensemble/checkpoints/roberta_focal_seed52.pt"
+    },
+    {
+      "seed": 62,
+      "epoch": 3,
+      "f1_pcl": 0.5963060686015831,
+      "threshold": 0.575,
+      "precision_pcl": 0.6277777777777778,
+      "recall_pcl": 0.5678391959798995,
+      "macro_f1": 0.7780690227492032,
+      "ckpt": "/content/drive/MyDrive/COMP60035 nlp/BestModel/output/roberta_focal_threshold_seedensemble/checkpoints/roberta_focal_seed62.pt"
+    }
+  ],
+  "paths": {
+    "base_dir": "/content/drive/MyDrive/COMP60035 nlp/BestModel",
+    "project_dir": "/content/drive/MyDrive/COMP60035 nlp",
+    "tsv_path": "/content/drive/MyDrive/COMP60035 nlp/dontpatronizeme_pcl.tsv",
+    "train_csv": "/content/drive/MyDrive/COMP60035 nlp/train/train_semeval_parids-labels.csv",
+    "dev_csv": "/content/drive/MyDrive/COMP60035 nlp/train/dev_semeval_parids-labels.csv",
+    "run_dir": "/content/drive/MyDrive/COMP60035 nlp/BestModel/output/roberta_focal_threshold_seedensemble"
+  }
+}
